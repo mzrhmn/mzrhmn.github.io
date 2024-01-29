@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ebebeb;
+}
+
+body {
+    background: #000;
+}
+
+.paragraf-header {
+    font-size: 16px;
+    color: #e2e2e2;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.paragraf {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-back a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    background: #ce0000;
+    border-radius: 10px;
+}
+
+.btn-back a:hover {
+    background: #fff;
+    color: #ce0000;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+}
+
+.image-container .image-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-item {
+    display: inline;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-item:hover img {
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .btn-back a .back-text {
+        display: none;
+    }
+
+    .btn-back {
+        position: relative;
+        top: 5%;
+        left: 5%;
+    }
+
+    .image-item {
+        overflow: hidden;
+    }
+
+    .image-item img {
+        border-radius: 10px;
+    }
+
+    .typedText {
+        font-size: 30px;
+    }
+    
+    .typed-cursor {
+        font-size: 30px;
+        color: white;
+    }
+
+    .paragraf {
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+}
